@@ -1,0 +1,33 @@
+<!-- TODO: Editor 5: Trang kiểm tra tài nguyên
+Yêu cầu: Tạo trang có link CSS, script JS và đoạn hướng dẫn kiểm tra đường dẫn bằng DevTools.
+Gợi ý: Nếu CSS/JS không chạy, kiểm tra href/src và Console.
+Không dán code vào editor chính. Hãy tự gõ, sau đó copy sang editor online để chạy thử. -->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO</title>
+  <!-- TODO: thêm CSS nội bộ hoặc liên kết css/style.css nếu đề yêu cầu -->
+</head>
+<body>
+<div>
+    <h1>Hướng dẫn kiểm tra tài nguyên hệ thống</h1>
+    <p>Khi nhúng CSS hoặc JavaScript vào trang web, đôi khi đường dẫn có thể bị sai khiến giao diện không hiển thị đúng hoặc tính năng bị lỗi.</p>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3>Các bước kiểm tra đường dẫn bằng DevTools:</h3>
+    <ul>
+      <li><strong>Bước 1:</strong> Nhấn phím <code>F12</code> (hoặc click chuột phải chọn <code>Inspect / Kiểm tra</code>) để mở DevTools.</li>
+      <li><strong>Bước 2:</strong> Chọn tab <strong>Console</strong>. Nếu thấy dòng lỗi màu đỏ dạng <code>GET ... net::ERR_FILE_NOT_FOUND</code>, nghĩa là đường dẫn file CSS hoặc JS của bạn đang bị sai (href/src không đúng).</li>
+      <li><strong>Bước 3:</strong> Chuyển sang tab <strong>Network</strong> và nhấn <code>F5</code> để tải lại trang. Kiểm tra cột <em>Status</em>, nếu file CSS/JS báo trạng thái <code>404</code> nghĩa là không tìm thấy file.</li>
+    </ul>
+  </div>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
